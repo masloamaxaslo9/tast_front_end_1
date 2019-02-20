@@ -1,0 +1,26 @@
+body {
+  background-color: rgba(255,70,70,0.5);
+  @include flexCenter();
+  min-height: 100vh;
+  .wraper {
+    background-color: $white;
+    font-family: $roboto;
+    width: 25%;
+    height: 40vh;
+    border-radius: 5px;
+    @include flexCenter ();
+    flex-direction: column;
+    h1 {
+      margin-bottom: 30px;
+    }
+    label {
+      margin-bottom: 5px;
+    }
+    input {
+      margin-bottom: 10px;
+    }
+    button {
+      margin-top: 10px;
+    }
+  }
+}
