@@ -1,27 +1,27 @@
-function counter() {
-    let value_one = Number(document.getElementById('number_one').value); // Min
-    let value_two = Number(document.getElementById('number_two').value); // Max
+function funcCounter() {
+    let minValue = Number(document.getElementById('number_one').value); // Min
+    let maxValue = Number(document.getElementById('number_two').value); // Max
     let step = 5;
-    let counter = value_one;
+    let counter = minValue;
     console.log('Version One');
-    while (value_two >= counter) {
+    while (maxValue >= counter) {
         console.log(counter);
         counter += step;
     }
 
     console.log('Version Two');
-    counter = value_one;
+    counter = minValue;
     do {
         console.log(counter);
         counter += step;
-    } while (value_two >= counter);
+    } while (maxValue >= counter);
 
     console.log('Version Three');
-    for(counter = value_one; counter <= value_two; counter += step) {
+    for(counter = minValue; counter <= maxValue; counter += step) {
         console.log(counter);
     }
 }
 
-function message() {
+function funcInnerTextH1() {
     document.getElementById('message').innerHTML="Console message";
 }
